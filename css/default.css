@@ -646,3 +646,29 @@
 
 		margin-top: 20px; 
 	}
+
+
+	/* input field*/
+
+	/* ★★★★ 여기부터 조정안됨 ... ★★★★ */
+
+	#contact_section .contact_wrap .contact_dungdung .table_wrap{
+		width: ;
+		margin: 0 auto;
+	}
+
+	#contact_section .contact_wrap .contact_dungdung .table_wrap .input{
+		border-bottom: 1px solid #ffc000;
+	}
+
+	#contact_section .contact_wrap .contact_dungdung .table_wrap .input input{
+		border: 0;
+		width: 250px;
+		box-sizing: border-box;
+		padding: 0 10px;
+		height: 50px;
+		background:transparent; 
+
+			/* padding은 위아래 값 주지 말기*/
+			/* input 요소에 css 값을 주지 말고, input을 감싸는 div에 원하는 효과를 주는 것이 좋음 */
+	}
