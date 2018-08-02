@@ -465,14 +465,14 @@
 /* portfolio */
 
 	#portfolio_section .portfolio_wrap{
-	    height: 900px;
+	    height: 1300px;
 		box-sizing: border-box;
 		min-width: 1280px;
 		text-align: center;
 
 		background-color: #202534;
-		background-size: 1920px 900px; 
-		background-attachment: fixed;
+		background-size: 1920px 1300px; 
+		
 	}
 
 	#portfolio_section .portfolio_wrap .tlt{
@@ -531,7 +531,9 @@
 		height: 298px;
 	}
 
-	/* hover */
+	/* hover ★★★★★ 적용 안됨 ★★★★★ */
+
+	/*
 
 	#portfolio_section .portfolio_wrap .item .thumbBox .type{
 		opacity: 0;
@@ -584,6 +586,63 @@
 	}
 
 	#portfolio_section .portfolio_wrap .item .thumbBox img{
+		transform: scale(1);
 		transition:all 0.3s;
 		
+	}
+
+	*/
+
+
+	/* contact */
+
+	#contact_b_section .contact_b_wrap{
+		height: 500px;
+		box-sizing: border-box;
+		min-width: 1280px;
+		text-align: center;
+
+		background-color: #ffc000;
+		background-size: 1920px 500px;
+	}
+
+	#contact_section .contact_wrap{
+		position: relative;
+	}
+
+	#contact_section .contact_wrap .contact_dungdung{
+		position: absolute;
+		left: 360px; /* 450 */
+		top: -800px;
+
+		width: 800px;
+		height: 650px;
+		background-color: #f4f4f4;
+
+		text-align: center;
+	}
+
+	#contact_section .contact_wrap .contact_dungdung .txt_wrap{
+		font-family: 'Montserrat', sans-serif;
+
+		
+		text-align: left;
+
+		margin-top:100px;
+		margin-left: 80px;
+	}
+
+	#contact_section .contact_wrap .contact_dungdung .txt_wrap .tlt{
+		font-weight: 800;
+		font-size: 50px;
+		color: #202534;
+	}
+
+	#contact_section .contact_wrap .contact_dungdung .txt_wrap .txt{
+		font-weight: 400;
+		font-size: 22px;
+		color: #ffc000;
+		line-height: 1.4;
+
+		margin-top: 20px; 
 	}
