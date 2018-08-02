@@ -104,6 +104,21 @@
 		min-width: 1280px;
 	}
 
+	/* footer */
+	#footer_container{
+		min-width: 1280px;
+		height: 100px;
+		background-color: #242a3b;
+	}
+
+	#footer_container .copy{
+		font-size: 16px;
+		color: #ffc000;
+		letter-spacing: -1px;
+		text-align: center;
+		line-height: 100px;
+	}
+
 
 	/* intro_section */
 	.intro_section{
@@ -170,7 +185,7 @@
 		text-align: center;
 
 /*		background:url(../image/bg_intro02.jpg);*/
-        background-color: #ffdc72;
+        background-color: #ffc000;
 		background-size: 1920px 1080px;
 
 
@@ -198,7 +213,7 @@
 		font-size: 50px;
 		color: #fff;
 
-		margin-top: 400px;
+		margin-top: 500px;
 		position: relative;
 	}
 
@@ -235,44 +250,68 @@
 	#summery_section .summery_wrap .skill_ico li .ico{
 		width: 200px; 
 		height: 200px;
-		border-width: 4px;
-		border-style: solid;
-		box-sizing: border-box;
+        border: 4px solid #f4f4f4;
 		border-radius: 50%;
 		line-height: 192px;		
 	}
 
 	#summery_section .summery_wrap .skill_ico li .ico.ph{
-        background-color: #fff;
-		border-color: #001d26;
+        background-color: #f4f4f4;
+		
 	}
 	#summery_section .summery_wrap .skill_ico li .ico.ai{
-		background-color: #fff;
-        border-color: #261300;
+		background-color: #f4f4f4;
+        
 	}
 	
 	#summery_section .summery_wrap .skill_ico li .ico.ae{
-		background-color: #fff;
-        border-color: #1f003f;
+		background-color: #f4f4f4;
+        
 
 	}
 	#summery_section .summery_wrap .skill_ico li .ico.max{
-		background-color: #fff;
-        border-color: #001d26;
+		background-color: #f4f4f4;
+        
 	}
 
-	#summery_section .summery_wrap .skill_ico strong{
-		font-family: "Open sans", sans-serif  ; 
-		font-size: 22px;
+
+
+/* s_animaition */
+	#summery_section .summery_wrap .skill_ico li .ico:hover img{
+		transform:scale(1.1,1.1);
+
+	}
+
+	#summery_section .summery_wrap .skill_ico li .ico img{
+		transition: all 0.3s;
+	}
+/* e_animaition */
+
+
+
+
+    #summery_section .summery_wrap .skill_ico p{
+        color: #242a3b;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        
+        margin-top: 30px;
+    }
+
+	#summery_section .summery_wrap .skill_ico p span{
+		font-family: 'Montserrat', sans-serif; 
+		font-size: 25px;
 		text-transform: uppercase;
 		font-weight: 600;
-		color: #242a3b;
+		color: #f4f4f4;
         
-        padding-top: 50px;
-
+        
 		position: relative;
 
 	}
+
+    
 
 /*    profile */
 
@@ -421,3 +460,130 @@
     }
 
 /*  ★★★★★★★★★★★★★★★★★★★★★★ 여기 opacity 애니메이션 줘보기 ★★★★★★★★★★   */
+
+
+/* portfolio */
+
+	#portfolio_section .portfolio_wrap{
+	    height: 900px;
+		box-sizing: border-box;
+		min-width: 1280px;
+		text-align: center;
+
+		background-color: #202534;
+		background-size: 1920px 900px; 
+		background-attachment: fixed;
+	}
+
+	#portfolio_section .portfolio_wrap .tlt{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 50px;
+		color: #fff;
+
+		padding-top: 150px;
+		position: relative;
+	}
+
+	#portfolio_section .portfolio_wrap .tlt h4 {
+		font-weight: 300px;
+
+	}
+
+	#portfolio_section .portfolio_wrap .tlt h4 strong{
+		font-weight: 800;
+		color: #ffc000;
+	}
+
+	#portfolio_section .portfolio_wrap .tlt p{
+		font-weight: 200;
+		font-style: italic;
+		font-size: 25px;
+		color: #ffc000;
+
+		padding-top: 20px;
+	}
+
+	#portfolio_section .portfolio_wrap ul{
+		width: 900px;
+		margin: 100px auto;
+		overflow: hidden;
+	}
+
+
+	#portfolio_section .portfolio_wrap .item{
+		width: 300px; height: 300px;
+		background-color: #f4f4f4;
+		float: left;
+		margin-top:40px;
+		border: 1px solid #f4f4f4;
+		box-sizing:border-box;
+	}
+
+	#portfolio_section .portfolio_wrap .item .thumbBox{
+		width: 100%;
+		height: 298px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	#portfolio_section .portfolio_wrap .item .thumbBox img{
+		width: 298px;
+		height: 298px;
+	}
+
+	/* hover */
+
+	#portfolio_section .portfolio_wrap .item .thumbBox .type{
+		opacity: 0;
+		position: absolute;
+		left: 0; right: 0; top: 0; bottom: 0;
+		background-color: rgba(255,198,0,0.8);
+		color: #202534;
+		line-height: 298px;
+		text-align:center;
+		font-size: 26px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 100;
+		text-transform: uppercase;
+		transition: 0.8s;
+	}
+
+	#portfolio_section .portfolio_wrap .item:hover .thumbBox .type{
+		opacity: 1;
+	}
+
+	#portfolio_section .portfolio_wrap .item .thumbBox .type::before,
+	#portfolio_section .portfolio_wrap .item .thumbBox .type::after{
+		content: "";
+		position: absolute;
+		left: 5px; right: 5px; top: 5px; bottom: 5px;
+		transition: all 1s;
+	}
+
+	#portfolio_section .portfolio_wrap .item .thumbBox .type::before{
+		border-top: 1px solid #202534;
+		border-bottom: 1px solid #202534;
+		transform: scale(0.5,1);
+	}
+
+	#portfolio_section .portfolio_wrap .item .thumbBox .type::after{
+		border-left:1px solid #202534;
+		border-right: 1px solid #202534;
+		transform: scale(1,0);
+	}
+
+	#portfolio_section .portfolio_wrap .item:hover .thumbBox .type::before,
+	#portfolio_section .portfolio_wrap .item:hover .thumbBox .type::after{
+		transform: scale(1);
+	}
+
+
+	#portfolio_section .portfolio_wrap .item:hover .thumbBox img{
+		transform:scale(1.1,1.1);
+		overflow: hidden;
+	}
+
+	#portfolio_section .portfolio_wrap .item .thumbBox img{
+		transition:all 0.3s;
+		
+	}
